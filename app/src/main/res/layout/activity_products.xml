@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/teal_700"
+            android:padding="8dp"
+            android:id="@+id/rel"
+            android:visibility="gone">
+            <EditText android:id="@+id/inputSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="Find Product..."
+                android:textColorHint="@color/white_30"
+                android:inputType="text"
+                android:padding="6dp"
+                android:imeOptions="actionSearch"
+                android:background="@drawable/search_edittext"
+                android:theme="@style/ETTheme"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categories"
+            android:background="@color/teal_700"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subCategories"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_70030"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/products"
+            android:numColumns="3"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/search"
+        app:tint="@color/white"
+        app:fabCustomSize="@dimen/design_fab_image_size"
+        app:backgroundTint="@drawable/search_cl"
+        app:maxImageSize="24dp"
+        android:layout_margin="16dp"
+        android:id="@+id/fab"/>
+
+</RelativeLayout>
