@@ -405,10 +405,6 @@ public class Products extends AppCompatActivity implements Interfaces.apiReturn,
         JSONObject sendObject=new JSONObject();
         sendObject.put("content.subcategory.id",subid);
         sendObject.put("relationName","productRelations");
-        JSONArray fields=new JSONArray();
-        fields.put("collection_content");
-        fields.put("content");
-        sendObject.put("fields",fields);
        /* JSONObject select=new JSONObject();
         JSONArray query_objects=new JSONArray();
         JSONArray fields=new JSONArray();

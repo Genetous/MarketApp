@@ -4,14 +4,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ApiClass {
-    public static String applicationId="xxx-xxx-xxxx-xxx";
-    public static String organizationId="xxxxxx";
-    static String ip="http://192.168.0.25";
-    public static String main_url="http://192.168.0.25:5004/";
-    public static String token_client=ip+":5008/client";
-    public static String token_auth=ip+":5008/auth";
-    public static String token_verify=ip+":5008/verify";
-    public static String token_logout=ip+":5008/logout";
+    public static String applicationId="4f0f0567-a8aa-4780-bf8f-7aa0edcec572";
+    public static String organizationId="6199a078bb6bb0850b8c5b16";
+    static String ip="http://192.168.0.21";
+    public static String main_url=ip+"/api/";
+    public static String token_client=ip+"/auths/client";
+    public static String token_auth=ip+"/auths/auth";
+    public static String token_verify=ip+"/auths/verify";
+    public static String token_logout=ip+"/auths/logout";
     public static String create_collection="";
     public static String create_unique_collection=main_url+"add/unique/collection";
     public static String get_collection="get/collection";
